@@ -10,7 +10,6 @@ function DetailAccount(props) {
         setIsShowDetailAccount(false)
     }
 
-
     return (
         <div className={`${styles.detailAccount}`}>
             <div className={`${styles.main}`}>

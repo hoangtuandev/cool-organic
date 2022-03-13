@@ -11,7 +11,7 @@ import SidebarStatistical from './SidebarStatistical';
 
 function Sidebar(props) {
 
-    const { cookies } = props
+    // const { cookies } = props
 
     return (
         <div className={`${styles.sidebar}`}>
@@ -30,15 +30,12 @@ function Sidebar(props) {
                     <SidebarOrder></SidebarOrder>
                 </Link>
                 {
-                    cookies.access === "QUANLY" &&
+                    // cookies.access === "QUANLY" &&
                     <Link to="/accounts">
                         <SidebarAccount></SidebarAccount>
                     </Link>
                 }
-
-                <Link to="/statistical">
-                    <SidebarStatistical></SidebarStatistical>
-                </Link>
+                <SidebarStatistical></SidebarStatistical>
             </ul>
         </div>
     );

@@ -5,7 +5,7 @@ function ProductsHeader(props) {
     return (
         <thead>
             <tr className={`${styles.tableName}`}><td>Tất cả sản phẩm</td></tr>
-            <tr className={`${styles.tableAmount}`}><td>Số lượng: 500</td></tr>
+            <tr className={`${styles.tableAmount}`}><td></td></tr>
             <tr className={`${styles.tableTitles}`}>
                 <td className={`${styles.none}`}></td>
                 <td><span>Mã sản phẩm</span></td>

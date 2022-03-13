@@ -15,8 +15,6 @@ function App() {
 
     const [cookies, setCookie, removeCookie] = useCookies(['user'])
 
-
-
     const handleSetCookieLogin = (cookie) => {
         setCookie('username', cookie.tkqt_tendangnhap, { path: '/' })
         setCookie('password', cookie.tkqt_matkhau, { path: '/' })

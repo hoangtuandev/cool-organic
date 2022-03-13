@@ -5,7 +5,7 @@ function OrdersHeader(props) {
     return (
         <thead>
             <tr className={`${styles.tableName}`}><td>Tất cả đơn hàng</td></tr>
-            <tr className={`${styles.ordersAmount}`}><td>500 đơn hàng</td></tr>
+            <tr className={`${styles.ordersAmount}`}><td></td></tr>
             <tr className={`${styles.tableTitle}`}>
                 <td>Mã đơn hàng</td>
                 <td>Khách hàng</td>

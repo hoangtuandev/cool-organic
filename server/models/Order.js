@@ -7,7 +7,7 @@ const Order = {
     },
 
     getAllOrders: (req, callback) => {
-        return db.query(`SELECT *, date_format(dh_ngaydathang, '%d/%m/%Y %H:%i') as dh_ngaydathang FROM donhang DH JOIN taikhoankhachhang TKKH ON DH.dh_taikhoan = TKKH.tkkh_sodienthoai JOIN trangthaidonhang TTDH ON TTDH.ttdh_id = dh_trangthai ORDER BY dh_ngaydathang ASC;`, callback)
+        return db.query(`SELECT *, date_format(dh_ngaydathang, '%d/%m/%Y %H:%i') as dh_ngaydathang FROM donhang DH JOIN taikhoankhachhang TKKH ON DH.dh_taikhoan = TKKH.tkkh_sodienthoai JOIN trangthaidonhang TTDH ON TTDH.ttdh_id = dh_trangthai ORDER BY dh_ngaydathang DESC;`, callback)
     },
 
     cancelOrder: (req, callback) => {
